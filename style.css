@@ -1,0 +1,6 @@
+
+/*Custom Navbar Changes */
+
+.navbar-collapse {
+    flex-grow: 0;
+}
