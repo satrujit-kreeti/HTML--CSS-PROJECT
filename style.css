@@ -4,3 +4,12 @@
 .navbar-collapse {
     flex-grow: 0;
 }
+.person{
+    background-color: black;
+    color: white;
+}
+
+.separate{
+    height: 1rem;
+}
+
