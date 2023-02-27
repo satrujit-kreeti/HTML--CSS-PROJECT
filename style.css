@@ -13,3 +13,44 @@
     height: 1rem;
 }
 
+.carousel-control-next-icon{
+    background-image: url("assets/Next.svg");
+}
+
+.carousel-control-prev-icon{
+    background-image: url("assets/Previous.svg");
+}
+.carousel-control-next{
+    justify-content: end;
+    margin-right: 1rem;
+}
+
+.carousel-control-prev{
+    justify-content: start;
+    margin-left: 1rem;
+}
+
+.image{
+    aspect-ratio: 1/1;
+}
+
+@media screen and (max-width: 768px) {
+    .desktop{
+        display: none;
+    }
+    .row{
+        display: block;
+    }
+    .card-title{
+        margin-top: 1rem;
+    }
+    .card{
+        margin-bottom: 1rem !important;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .mobile{
+        display: none;
+    }
+}
