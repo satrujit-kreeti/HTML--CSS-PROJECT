@@ -1,8 +1,50 @@
 
 /*Custom Navbar Changes */
 
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
 .navbar-collapse {
     flex-grow: 0;
+}
+
+.navbar-toggler-icon{
+ background-image: url("assets/ham-menu.svg");
+}
+
+.navbar-brand{
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.nav-item{
+    font-weight: 100 !important;
+}
+
+header{
+    width: 75%;
+    margin-inline: auto;
+    
+}
+
+.text-center{
+    line-height: 1.8;
+}
+
+.fs-1{
+    font-size: 4.5rem !important;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    line-height:1;
+    margin-top: 1.5rem;
+}
+
+
+
+.sticky-top{
+    background-color: white;
 }
 .person{
     background-color: black;
@@ -11,6 +53,15 @@
 
 .separate{
     height: 1rem;
+}
+
+main .card-text{
+    /* color: rgba(0, 0, 0, 0.619); */
+    line-height: 1.8;
+
+    font-size:medium;
+    font-weight: 300;
+
 }
 
 .carousel-control-next-icon{
@@ -30,9 +81,33 @@
     margin-left: 1rem;
 }
 
-.image{
+ .slider {
     aspect-ratio: 1/1;
+    object-fit: cover;
 }
+
+.card-title{
+    font-weight: 400;
+    margin-top: 1rem;
+
+}
+
+section .card-text{
+    font-weight: 300;
+    font-size: small;
+    font-style: italic;
+}
+section .card-title{
+    font-weight: 400;
+    font-size:medium;
+    margin-bottom: 0;
+}
+
+hr{
+    border-width: 0.15rem;
+    opacity: 1;
+}
+
 
 @media screen and (max-width: 768px) {
     .desktop{
@@ -41,12 +116,22 @@
     .row{
         display: block;
     }
-    .card-title{
-        margin-top: 1rem;
-    }
+    
     .card{
         margin-bottom: 1rem !important;
     }
+
+    header{
+        width: 100%;
+    }
+
+    .fs-1{
+        font-size: 3rem !important;
+        font-weight: 300;
+        margin-bottom: 1rem;
+        line-height:1;
+    }
+    
 }
 
 @media screen and (min-width: 769px) {
