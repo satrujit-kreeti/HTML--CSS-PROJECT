@@ -108,6 +108,14 @@ hr{
     opacity: 1;
 }
 
+footer{
+    font-weight: 300;
+}
+
+h6{
+    font-weight: 300;
+}
+
 
 @media screen and (max-width: 768px) {
     .desktop{
