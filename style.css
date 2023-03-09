@@ -5,6 +5,11 @@
 
 /*Custom Navbar Changes */
 
+.navbar{
+    max-width: 1440px;
+    margin-inline: auto;
+}
+
 .navbar-collapse {
     flex-grow: 0;
 }
@@ -66,6 +71,14 @@ main .card-text {
 
 /* Carousal Slider */
 
+.desktop{
+    background-color: black;
+}
+
+.person{
+    max-width: 1440px;
+}
+
 
 .carousel-control-next-icon {
     background-image: url("assets/Next.svg");
@@ -117,6 +130,8 @@ hr {
 
 footer {
     font-weight: 300;
+    background-color: black;
+    
 }
 
 h6 {
