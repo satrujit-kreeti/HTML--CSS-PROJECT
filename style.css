@@ -134,6 +134,10 @@ footer {
     
 }
 
+footer p, address{
+    color: rgba(255, 255, 255, 0.699);
+}
+
 h6 {
     font-weight: 300;
 }
