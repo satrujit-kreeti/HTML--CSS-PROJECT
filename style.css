@@ -69,6 +69,11 @@ main .card-text {
     color: white;
 }
 
+
+.paragraph{
+    max-width: 85%;
+    margin-inline: auto;
+}
 /* Carousal Slider */
 
 .desktop{
@@ -173,6 +178,10 @@ h6 {
         line-height: 1;
     }
 
+    .paragraph{
+        max-width: 100%;
+    }
+
 }
 
 /* Tablet */
@@ -204,6 +213,10 @@ h6 {
         font-weight: 300;
         margin-bottom: 1rem;
         line-height: 1;
+    }
+
+    .paragraph{
+        max-width: 100%;
     }
 
 }
