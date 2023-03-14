@@ -5,7 +5,7 @@
 
 /*Custom Navbar Changes */
 
-.navbar{
+.navbar {
     max-width: 1440px;
     margin-inline: auto;
 }
@@ -54,9 +54,7 @@
 /* Main */
 
 main .card-text {
-    /* color: rgba(0, 0, 0, 0.619); */
     line-height: 1.8;
-
     font-size: medium;
     font-weight: 300;
 
@@ -70,17 +68,18 @@ main .card-text {
 }
 
 
-.paragraph{
+.paragraph {
     max-width: 85%;
     margin-inline: auto;
 }
+
 /* Carousal Slider */
 
-.desktop{
+.desktop {
     background-color: rgba(0, 0, 0, 0.9);
 }
 
-.person{
+.person {
     max-width: 1440px;
 }
 
@@ -136,10 +135,11 @@ hr {
 footer {
     font-weight: 300;
     background-color: black;
-    
+
 }
 
-footer p, address{
+footer p,
+address {
     color: rgba(255, 255, 255, 0.699);
 }
 
@@ -178,7 +178,7 @@ h6 {
         line-height: 1;
     }
 
-    .paragraph{
+    .paragraph {
         max-width: 100%;
     }
 
@@ -217,7 +217,7 @@ h6 {
         line-height: 1;
     }
 
-    .paragraph{
+    .paragraph {
         max-width: 100%;
     }
 
@@ -235,8 +235,7 @@ h6 {
         width: 80%;
     }
 
-    .container{
-        /* max-width: 95%; */
+    .container {
         max-width: 95%;
     }
 
@@ -251,4 +250,35 @@ h6 {
         display: none;
     }
 }
+
+
+/* Navbar Toggle */
+
+@media screen and (max-width:425px){
+    
+}
+
+@media screen and (min-width:426px){
+    .navbar-toggler{
+        display: none;
+    }
+
+    .navbar-nav {
+        visibility: visible;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .collapse:not(.show) {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+    }
+    .navbar > .container-fluid{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+}
+
 
