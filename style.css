@@ -51,14 +51,18 @@
     margin-top: 2rem;
 }
 
-/* Main */
+/* .grid */
 
-main .card-text {
+.grid .card-text {
     line-height: 1.8;
     font-size: medium;
     font-weight: 300;
 
 }
+.grid{
+    margin-bottom: 1.5rem;
+}
+
 
 /* Our Team */
 
@@ -113,13 +117,13 @@ main .card-text {
 
 }
 
-section .card-text {
+#AboutUs .card-text {
     font-weight: 300;
     font-size: small;
     font-style: italic;
 }
 
-section .card-title {
+#AboutUs .card-title {
     font-weight: 400;
     font-size: medium;
     margin-bottom: 0;
@@ -141,6 +145,7 @@ footer {
 footer p,
 address {
     color: rgba(255, 255, 255, 0.699);
+    line-height: 1.5rem;
 }
 
 h6 {
@@ -197,7 +202,7 @@ h6 {
         display: none;
     }
 
-    main .row,
+    .grid .row,
     footer .row {
         display: block;
     }
