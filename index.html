@@ -1,610 +1,432 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bootstrap demo</title>
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
 
-  <body class="d-flex flex-column min-vh-100">
-    <!-- Navbar -->
-    <header class="sticky-top">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a href="#" class="navbar-brand">
-            <img
-              src="assets/logo.jpg"
-              height="60"
-              alt="Logo"
-              class="d-inline-block align-text-middle"
-            />
-            <span class="fw-light">Grid</span>
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <ul class="navbar-nav collapse navbar-collapse" id="navbarNav">
-            <li class="nav-item pe-2 ps-2">
-              <a
-                class="nav-link active fw-light"
-                aria-current="page"
-                href="#Home"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item pe-2 ps-2">
-              <a
-                class="nav-link active fw-light"
-                aria-current="page"
-                href="#AboutUs"
-              >
-                About Us</a
-              >
-            </li>
-            <li class="nav-item ps-2">
-              <a
-                class="nav-link active fw-light"
-                aria-current="page"
-                href="#Contact"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <!-- Main -->
-    <!-- Card Section -->
-
-    <main class="mt-5 mb-4" id="Home">
-      <section class="container head-content pb-4">
-        <h1 class="text-center fs-1 header">Lorem ipsum dolor sit amet</h1>
-        <p class="text-center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-          imperdiet velit nisi, vitae rutrum enim viverra at. Vivamus nisi ante,
-          consequat sodales magna eu, sollicitudin commodo tellus. Fusce lacinia
-          feugiat consequat.
-        </p>
-      </section>
-
-      <section class="container grid">
-        <div class="row mb-5">
-          <figure class="col card border-0">
-            <div class="ratio ratio-4x3">
-              <img
-                src="assets/img3.png"
-                alt="Garden Image"
-                class="object-fit-cover card-img-top rounded-0"
-              />
-            </div>
-            <figcaption class="card-body p-0">
-              <h5 class="card-title">Cras elit massa</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas imperdiet velit nisi. vitae rutrum enim viverra at.
-                Vivamus nisi ante, consequat sodales magna eu, sollicitudin
-                commodo tellus
-              </p>
-            </figcaption>
-          </figure>
-
-          <figure class="col card border-0">
-            <figcaption class="card-body p-0 text-center">
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed
-                imperdiet nibh, non venenatis mi. Aenean congue elit ac mollis
-                mollis. Donec dignissim purus sed ultricies interdum. Nullam
-                vulputate mi metus, nec sollicitudin erat laoreet id. Sed
-                vestibulum feugiat.consectetur. Suspendisse at pellentesque
-                quam, et molestie neque. Duis ante leo, tincidunt auctor
-                interdum ac, suscipit in augue. Quisque non aliquet lacus.
-                Aliquam erat volutpat.
-              </p>
-            </figcaption>
-          </figure>
-          <figure class="col card border-0">
-            <div class="ratio ratio-4x3">
-              <img
-                src="assets/img2.jpg"
-                alt="Garden Image"
-                class="object-fit-cover card-img-top rounded-0"
-              />
-            </div>
-            <figcaption class="card-body p-0">
-              <h5 class="card-title">Nulla facilisi</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas imperdiet velit nisi, vitae rutrum enim viverra at.
-                Vivamus nisi ante, consequat sodales magna eu sollicitudin
-                commodo tellus.
-              </p>
-            </figcaption>
-          </figure>
-        </div>
-
-        <div class="row align-items-center mt-3">
-          <figure class="col card border-0">
-            <div class="ratio ratio-4x3">
-              <img
-                src="assets/img4.jpg"
-                alt="Garden Image"
-                class="object-fit-cover card-img-top rounded-0"
-              />
-            </div>
-          </figure>
-
-          <figure class="col card border-0">
-            <div class="ratio ratio-4x3">
-              <img
-                src="assets/img2.jpg"
-                alt="Garden Image"
-                class="object-fit-cover card-img-top rounded-0"
-              />
-            </div>
-            <figcaption class="card-body p-0">
-              <h5 class="card-title">Nulla facilisi</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas imperdiet velit nisi, vitae rutrum enim viverra at.
-                Vivamus nisi ante, consequat sodales magna eu sollicitudin
-                commodo tellus.
-              </p>
-            </figcaption>
-          </figure>
-          <figure class="col card border-0">
-            <div class="ratio ratio-4x3">
-              <img
-                src="assets/1.jpg"
-                alt="Garden Image"
-                class="object-fit-cover card-img-top rounded-0"
-              />
-            </div>
-          </figure>
-        </div>
-      </section>
-      <div id="AboutUs">
-        <!-- Desktop -->
-        <section class="text-center">
-          <div class="container">
-            <div class="d-flex flex-row gap-4 justify-content-center">
-              <hr style="width: 2rem; height: 1rem;" />
-              <h2 class="fw-light">Our Team</h2>
-              <hr style="width: 2rem;" />
-            </div>
-            <p class="fw-light paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-              imperdiet velit nisi, vitae rutrum enim viverra at. Vivamus nisi
-              ante, consequat sodales magna eu, sollicitudin commodo te
-            </p>
-          </div>
-          <div class="container-fluid mb-5 p-0 desktop">
-            <div class="container-fluid p-0 person">
-              <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="row">
-                      <figure class="col p-1 card border-0 person">
-                        <img
-                          src="assets/Characters/1.jpg"
-                          alt="Garden Image"
-                          class="card-img-top rounded-0 slider"
-                        />
-                        <figcaption class="card-body p-0 text-center">
-                          <h5 class="card-title">Jane</h5>
-                          <p class="card-text">Graphic Designer</p>
-                        </figcaption>
-                      </figure>
-                      <figure class="col p-1 card border-0 person">
-                        <img
-                          src="assets/Characters/2.jpeg"
-                          alt="Garden Image"
-                          class="card-img-top rounded-0 slider"
-                        />
-                        <figcaption class="card-body p-0 text-center">
-                          <h5 class="card-title">Mark</h5>
-                          <p class="card-text">Accountant</p>
-                        </figcaption>
-                      </figure>
-                      <figure class="col p-1 card border-0 person">
-                        <img
-                          src="assets/Characters/3.jpg"
-                          alt="Garden Image"
-                          class="card-img-top rounded-0 slider"
-                        />
-                        <figcaption class="card-body p-0 text-center">
-                          <h5 class="card-title">John</h5>
-                          <p class="card-text">Sales Manager</p>
-                        </figcaption>
-                      </figure>
-                      <figure class="col p-1 card border-0 person">
-                        <img
-                          src="assets/Characters/4.webp"
-                          alt="Garden Image"
-                          class="card-img-top rounded-0 slider"
-                        />
-                        <figcaption class="card-body p-0 text-center">
-                          <h5 class="card-title">Malissa</h5>
-                          <p class="card-text">Planner</p>
-                        </figcaption>
-                      </figure>
-                      <figure class="col p-1 card border-0 person">
-                        <img
-                          src="assets/p-image.jpg"
-                          alt="Garden Image"
-                          class="card-img-top rounded-0 slider"
-                        />
-                        <figcaption class="card-body p-0 text-center">
-                          <h5 class="card-title">Williams</h5>
-                          <p class="card-text">Senior Manager</p>
-                        </figcaption>
-                      </figure>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="row">
-                      <figure class="col p-1 card border-0 person">
-                        <img
-                          src="assets/Characters/1.jpg"
-                          alt="Garden Image"
-                          class="card-img-top rounded-0 slider"
-                        />
-                        <figcaption class="card-body p-0 text-center">
-                          <h5 class="card-title">Jane</h5>
-                          <p class="card-text">Graphic Designer</p>
-                        </figcaption>
-                      </figure>
-                      <figure class="col p-1 card border-0 person">
-                        <img
-                          src="assets/Characters/2.jpeg"
-                          alt="Garden Image"
-                          class="card-img-top rounded-0 slider"
-                        />
-                        <figcaption class="card-body p-0 text-center">
-                          <h5 class="card-title">Mark</h5>
-                          <p class="card-text">Accountant</p>
-                        </figcaption>
-                      </figure>
-                      <figure class="col p-1 card border-0 person">
-                        <img
-                          src="assets/Characters/3.jpg"
-                          alt="Garden Image"
-                          class="card-img-top rounded-0 slider"
-                        />
-                        <figcaption class="card-body p-0 text-center">
-                          <h5 class="card-title">John</h5>
-                          <p class="card-text">Sales Manager</p>
-                        </figcaption>
-                      </figure>
-                      <figure class="col p-1 card border-0 person">
-                        <img
-                          src="assets/Characters/4.webp"
-                          alt="Garden Image"
-                          class="card-img-top rounded-0 slider"
-                        />
-                        <figcaption class="card-body p-0 text-center">
-                          <h5 class="card-title">Malissa</h5>
-                          <p class="card-text">Planner</p>
-                        </figcaption>
-                      </figure>
-                      <figure class="col p-1 card border-0 person">
-                        <img
-                          src="assets/p-image.jpg"
-                          alt="Garden Image"
-                          class="card-img-top rounded-0 slider"
-                        />
-                        <figcaption class="card-body p-0 text-center">
-                          <h5 class="card-title">Williams</h5>
-                          <p class="card-text">Senior Manager</p>
-                        </figcaption>
-                      </figure>
-                    </div>
-                  </div>
-                </div>
-                <button
-                  class="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#carouselExample"
-                  data-bs-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                  class="carousel-control-next"
-                  type="button"
-                  data-bs-target="#carouselExample"
-                  data-bs-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Mobile Carousal -->
-        <section>
-          <div class="container-fluid mb-5 p-0 mobile">
-            <div class="container-fluid p-1 person">
-              <div id="carouselExample2" class="carousel slide">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <figure class="col p-1 card border-0 person">
-                      <img
-                        src="assets/Characters/1.jpg"
-                        alt="Garden Image"
-                        class="card-img-top rounded-0 slider"
-                      />
-                      <figcaption class="card-body p-0 text-center">
-                        <h5 class="card-title">Jane</h5>
-                        <p class="card-text">Graphic Designer</p>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="carousel-item">
-                    <figure class="col p-1 card border-0 person">
-                      <img
-                        src="assets/Characters/2.jpeg"
-                        alt="Garden Image"
-                        class="card-img-top rounded-0 slider"
-                      />
-                      <figcaption class="card-body p-0 text-center">
-                        <h5 class="card-title">Jane</h5>
-                        <p class="card-text">Graphic Designer</p>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="carousel-item">
-                    <figure class="col p-1 card border-0 person">
-                      <img
-                        src="assets/Characters/3.jpg"
-                        alt="Garden Image"
-                        class="card-img-top rounded-0 slider"
-                      />
-                      <figcaption class="card-body p-0 text-center">
-                        <h5 class="card-title">Jane</h5>
-                        <p class="card-text">Graphic Designer</p>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="carousel-item">
-                    <figure class="col p-1 card border-0 person">
-                      <img
-                        src="assets/Characters/4.webp"
-                        alt="Garden Image"
-                        class="card-img-top rounded-0 slider"
-                      />
-                      <figcaption class="card-body p-0 text-center">
-                        <h5 class="card-title">Jane</h5>
-                        <p class="card-text">Graphic Designer</p>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="carousel-item">
-                    <figure class="col p-1 card border-0 person">
-                      <img
-                        src="assets/p-image.jpg"
-                        alt="Garden Image"
-                        class="card-img-top rounded-0 slider"
-                      />
-                      <figcaption class="card-body p-0 text-center">
-                        <h5 class="card-title">Jane</h5>
-                        <p class="card-text">Graphic Designer</p>
-                      </figcaption>
-                    </figure>
-                  </div>
-                </div>
-                <button
-                  class="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#carouselExample2"
-                  data-bs-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                  class="carousel-control-next"
-                  type="button"
-                  data-bs-target="#carouselExample2"
-                  data-bs-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Tablet Carousal -->
-        <section>
-          <div class="container-fluid mb-5 p-0 tab">
-            <div class="container-fluid p-1 person">
-              <div id="carouselExample3" class="carousel slide">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="row">
-                      <figure class="col p-1 card border-0 person">
-                        <img
-                          src="assets/Characters/1.jpg"
-                          alt="Garden Image"
-                          class="card-img-top rounded-0 slider"
-                        />
-                        <figcaption class="card-body p-0 text-center">
-                          <h5 class="card-title">Jane</h5>
-                          <p class="card-text">Graphic Designer</p>
-                        </figcaption>
-                      </figure>
-                      <figure class="col p-1 card border-0 person">
-                        <img
-                          src="assets/Characters/2.jpeg"
-                          alt="Garden Image"
-                          class="card-img-top rounded-0 slider"
-                        />
-                        <figcaption class="card-body p-0 text-center">
-                          <h5 class="card-title">Jane</h5>
-                          <p class="card-text">Graphic Designer</p>
-                        </figcaption>
-                      </figure>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="row p-0">
-                      <figure class="col p-1 card border-0 person">
-                        <img
-                          src="assets/Characters/3.jpg"
-                          alt="Garden Image"
-                          class="card-img-top rounded-0 slider"
-                        />
-                        <figcaption class="card-body p-0 text-center">
-                          <h5 class="card-title">Jane</h5>
-                          <p class="card-text">Graphic Designer</p>
-                        </figcaption>
-                      </figure>
-                      <figure class="col p-1 card border-0 person">
-                        <img
-                          src="assets/Characters/4.webp"
-                          alt="Garden Image"
-                          class="card-img-top rounded-0 slider"
-                        />
-                        <figcaption class="card-body p-0 text-center">
-                          <h5 class="card-title">Jane</h5>
-                          <p class="card-text">Graphic Designer</p>
-                        </figcaption>
-                      </figure>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="row p-0">
-                      <figure class="col p-1 card border-0 person">
-                        <img
-                          src="assets/Characters/4.webp"
-                          alt="Garden Image"
-                          class="card-img-top rounded-0 slider"
-                        />
-                        <figcaption class="card-body p-0 text-center">
-                          <h5 class="card-title">Jane</h5>
-                          <p class="card-text">Graphic Designer</p>
-                        </figcaption>
-                      </figure>
-                      <figure class="col p-1 card border-0 person">
-                        <img
-                          src="assets/p-image.jpg"
-                          alt="Garden Image"
-                          class="card-img-top rounded-0 slider"
-                        />
-                        <figcaption class="card-body p-0 text-center">
-                          <h5 class="card-title">Jane</h5>
-                          <p class="card-text">Graphic Designer</p>
-                        </figcaption>
-                      </figure>
-                    </div>
-                  </div>
-                </div>
-                <button
-                  class="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#carouselExample3"
-                  data-bs-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                  class="carousel-control-next"
-                  type="button"
-                  data-bs-target="#carouselExample3"
-                  data-bs-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
+<body class="d-flex flex-column min-vh-100">
+  <!-- Navbar -->
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand">
+          <img src="assets/logo.jpg" height="60" alt="Logo" class="d-inline-block align-text-middle" />
+          <span class="fw-light">Grid</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="navbar-nav collapse navbar-collapse" id="navbarNav">
+          <li class="nav-item pe-2 ps-2">
+            <a class="nav-link active fw-light" aria-current="page" href="#Home">Home</a>
+          </li>
+          <li class="nav-item pe-2 ps-2">
+            <a class="nav-link active fw-light" aria-current="page" href="#AboutUs">
+              About Us</a>
+          </li>
+          <li class="nav-item ps-2">
+            <a class="nav-link active fw-light" aria-current="page" href="#Contact">Contact</a>
+          </li>
+        </ul>
       </div>
-    </main>
-    <footer class="container-fluid mt-auto" id="Contact">
-      <section class="container-fluid person pt-2 pb-2 mt-">
-        <div class="row text-center pt-2 person">
-          <div class="col">
-            <h6>Company Address</h6>
-            <address>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-              imperdiet velit nisl
-            </address>
-          </div>
-          <div class="col">
-            <h6>Email</h6>
-            <p>
-              Loremipsumolon@sitamet<br />
-              adipiscingelit@Maecenasimperdiet
-            </p>
-          </div>
-          <div class="col">
-            <h6>Phone Number</h6>
-            <address>
-              +91 1234567890 <br />
-              +91 98765 43210
-            </address>
-          </div>
-        </div>
-        <hr style="border-width: 0.5px; opacity: 0.5;" />
+    </nav>
+  </header>
 
-        <div class="row text-center person">
-          <small>Copyright &copy; 2019 grid. All rights reserved</small>
+  <!-- Main -->
+  <!-- Card Section -->
+
+  <main class="mt-5 mb-4" id="Home">
+    <section class="container head-content pb-4">
+      <h1 class="text-center fs-1 header">Lorem ipsum dolor sit amet</h1>
+      <p class="text-center">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+        imperdiet velit nisi, vitae rutrum enim viverra at. Vivamus nisi ante,
+        consequat sodales magna eu, sollicitudin commodo tellus. Fusce lacinia
+        feugiat consequat.
+      </p>
+    </section>
+
+    <section class="container grid">
+      <div class="row mb-5">
+        <figure class="col card border-0">
+          <div class="ratio ratio-4x3">
+            <img src="assets/img3.png" alt="Garden Image" class="object-fit-cover card-img-top rounded-0" />
+          </div>
+          <figcaption class="card-body p-0">
+            <h5 class="card-title">Cras elit massa</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Maecenas imperdiet velit nisi. vitae rutrum enim viverra at.
+              Vivamus nisi ante, consequat sodales magna eu, sollicitudin
+              commodo tellus
+            </p>
+          </figcaption>
+        </figure>
+
+        <figure class="col card border-0">
+          <figcaption class="card-body p-0 text-center">
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed
+              imperdiet nibh, non venenatis mi. Aenean congue elit ac mollis
+              mollis. Donec dignissim purus sed ultricies interdum. Nullam
+              vulputate mi metus, nec sollicitudin erat laoreet id. Sed
+              vestibulum feugiat.consectetur. Suspendisse at pellentesque
+              quam, et molestie neque. Duis ante leo, tincidunt auctor
+              interdum ac, suscipit in augue. Quisque non aliquet lacus.
+              Aliquam erat volutpat.
+            </p>
+          </figcaption>
+        </figure>
+        <figure class="col card border-0">
+          <div class="ratio ratio-4x3">
+            <img src="assets/img2.jpg" alt="Garden Image" class="object-fit-cover card-img-top rounded-0" />
+          </div>
+          <figcaption class="card-body p-0">
+            <h5 class="card-title">Nulla facilisi</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Maecenas imperdiet velit nisi, vitae rutrum enim viverra at.
+              Vivamus nisi ante, consequat sodales magna eu sollicitudin
+              commodo tellus.
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="row align-items-center mt-3">
+        <figure class="col card border-0">
+          <div class="ratio ratio-4x3">
+            <img src="assets/img4.jpg" alt="Garden Image" class="object-fit-cover card-img-top rounded-0" />
+          </div>
+        </figure>
+
+        <figure class="col card border-0">
+          <div class="ratio ratio-4x3">
+            <img src="assets/img2.jpg" alt="Garden Image" class="object-fit-cover card-img-top rounded-0" />
+          </div>
+          <figcaption class="card-body p-0">
+            <h5 class="card-title">Nulla facilisi</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Maecenas imperdiet velit nisi, vitae rutrum enim viverra at.
+              Vivamus nisi ante, consequat sodales magna eu sollicitudin
+              commodo tellus.
+            </p>
+          </figcaption>
+        </figure>
+        <figure class="col card border-0">
+          <div class="ratio ratio-4x3">
+            <img src="assets/1.jpg" alt="Garden Image" class="object-fit-cover card-img-top rounded-0" />
+          </div>
+        </figure>
+      </div>
+    </section>
+    <div id="AboutUs">
+      <!-- Desktop -->
+      <section class="text-center">
+        <div class="container">
+          <div class="d-flex flex-row gap-4 justify-content-center">
+            <hr style="width: 2rem; height: 1rem;" />
+            <h2 class="fw-light">Our Team</h2>
+            <hr style="width: 2rem;" />
+          </div>
+          <p class="fw-light paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+            imperdiet velit nisi, vitae rutrum enim viverra at. Vivamus nisi
+            ante, consequat sodales magna eu, sollicitudin commodo te
+          </p>
+        </div>
+        <div class="container-fluid mb-5 p-0 desktop">
+          <div class="container-fluid p-0 person">
+            <div id="carouselExample" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <figure class="col p-1 card border-0 person">
+                      <img src="assets/Characters/1.jpg" alt="Garden Image" class="card-img-top rounded-0 slider" />
+                      <figcaption class="card-body p-0 text-center">
+                        <h5 class="card-title">Jane</h5>
+                        <p class="card-text">Graphic Designer</p>
+                      </figcaption>
+                    </figure>
+                    <figure class="col p-1 card border-0 person">
+                      <img src="assets/Characters/2.jpeg" alt="Garden Image" class="card-img-top rounded-0 slider" />
+                      <figcaption class="card-body p-0 text-center">
+                        <h5 class="card-title">Mark</h5>
+                        <p class="card-text">Accountant</p>
+                      </figcaption>
+                    </figure>
+                    <figure class="col p-1 card border-0 person">
+                      <img src="assets/Characters/3.jpg" alt="Garden Image" class="card-img-top rounded-0 slider" />
+                      <figcaption class="card-body p-0 text-center">
+                        <h5 class="card-title">John</h5>
+                        <p class="card-text">Sales Manager</p>
+                      </figcaption>
+                    </figure>
+                    <figure class="col p-1 card border-0 person">
+                      <img src="assets/Characters/4.webp" alt="Garden Image" class="card-img-top rounded-0 slider" />
+                      <figcaption class="card-body p-0 text-center">
+                        <h5 class="card-title">Malissa</h5>
+                        <p class="card-text">Planner</p>
+                      </figcaption>
+                    </figure>
+                    <figure class="col p-1 card border-0 person">
+                      <img src="assets/p-image.jpg" alt="Garden Image" class="card-img-top rounded-0 slider" />
+                      <figcaption class="card-body p-0 text-center">
+                        <h5 class="card-title">Williams</h5>
+                        <p class="card-text">Senior Manager</p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <figure class="col p-1 card border-0 person">
+                      <img src="assets/Characters/1.jpg" alt="Garden Image" class="card-img-top rounded-0 slider" />
+                      <figcaption class="card-body p-0 text-center">
+                        <h5 class="card-title">Jane</h5>
+                        <p class="card-text">Graphic Designer</p>
+                      </figcaption>
+                    </figure>
+                    <figure class="col p-1 card border-0 person">
+                      <img src="assets/Characters/2.jpeg" alt="Garden Image" class="card-img-top rounded-0 slider" />
+                      <figcaption class="card-body p-0 text-center">
+                        <h5 class="card-title">Mark</h5>
+                        <p class="card-text">Accountant</p>
+                      </figcaption>
+                    </figure>
+                    <figure class="col p-1 card border-0 person">
+                      <img src="assets/Characters/3.jpg" alt="Garden Image" class="card-img-top rounded-0 slider" />
+                      <figcaption class="card-body p-0 text-center">
+                        <h5 class="card-title">John</h5>
+                        <p class="card-text">Sales Manager</p>
+                      </figcaption>
+                    </figure>
+                    <figure class="col p-1 card border-0 person">
+                      <img src="assets/Characters/4.webp" alt="Garden Image" class="card-img-top rounded-0 slider" />
+                      <figcaption class="card-body p-0 text-center">
+                        <h5 class="card-title">Malissa</h5>
+                        <p class="card-text">Planner</p>
+                      </figcaption>
+                    </figure>
+                    <figure class="col p-1 card border-0 person">
+                      <img src="assets/p-image.jpg" alt="Garden Image" class="card-img-top rounded-0 slider" />
+                      <figcaption class="card-body p-0 text-center">
+                        <h5 class="card-title">Williams</h5>
+                        <p class="card-text">Senior Manager</p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
-    </footer>
+      <!-- Mobile Carousal -->
+      <section>
+        <div class="container-fluid mb-5 p-0 mobile">
+          <div class="container-fluid p-1 person">
+            <div id="carouselExample2" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <figure class="col p-1 card border-0 person">
+                    <img src="assets/Characters/1.jpg" alt="Garden Image" class="card-img-top rounded-0 slider" />
+                    <figcaption class="card-body p-0 text-center">
+                      <h5 class="card-title">Jane</h5>
+                      <p class="card-text">Graphic Designer</p>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="carousel-item">
+                  <figure class="col p-1 card border-0 person">
+                    <img src="assets/Characters/2.jpeg" alt="Garden Image" class="card-img-top rounded-0 slider" />
+                    <figcaption class="card-body p-0 text-center">
+                      <h5 class="card-title">Jane</h5>
+                      <p class="card-text">Graphic Designer</p>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="carousel-item">
+                  <figure class="col p-1 card border-0 person">
+                    <img src="assets/Characters/3.jpg" alt="Garden Image" class="card-img-top rounded-0 slider" />
+                    <figcaption class="card-body p-0 text-center">
+                      <h5 class="card-title">Jane</h5>
+                      <p class="card-text">Graphic Designer</p>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="carousel-item">
+                  <figure class="col p-1 card border-0 person">
+                    <img src="assets/Characters/4.webp" alt="Garden Image" class="card-img-top rounded-0 slider" />
+                    <figcaption class="card-body p-0 text-center">
+                      <h5 class="card-title">Jane</h5>
+                      <p class="card-text">Graphic Designer</p>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="carousel-item">
+                  <figure class="col p-1 card border-0 person">
+                    <img src="assets/p-image.jpg" alt="Garden Image" class="card-img-top rounded-0 slider" />
+                    <figcaption class="card-body p-0 text-center">
+                      <h5 class="card-title">Jane</h5>
+                      <p class="card-text">Graphic Designer</p>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Tablet Carousal -->
+      <section>
+        <div class="container-fluid mb-5 p-0 tab">
+          <div class="container-fluid p-1 person">
+            <div id="carouselExample3" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <figure class="col p-1 card border-0 person">
+                      <img src="assets/Characters/1.jpg" alt="Garden Image" class="card-img-top rounded-0 slider" />
+                      <figcaption class="card-body p-0 text-center">
+                        <h5 class="card-title">Jane</h5>
+                        <p class="card-text">Graphic Designer</p>
+                      </figcaption>
+                    </figure>
+                    <figure class="col p-1 card border-0 person">
+                      <img src="assets/Characters/2.jpeg" alt="Garden Image" class="card-img-top rounded-0 slider" />
+                      <figcaption class="card-body p-0 text-center">
+                        <h5 class="card-title">Jane</h5>
+                        <p class="card-text">Graphic Designer</p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row p-0">
+                    <figure class="col p-1 card border-0 person">
+                      <img src="assets/Characters/3.jpg" alt="Garden Image" class="card-img-top rounded-0 slider" />
+                      <figcaption class="card-body p-0 text-center">
+                        <h5 class="card-title">Jane</h5>
+                        <p class="card-text">Graphic Designer</p>
+                      </figcaption>
+                    </figure>
+                    <figure class="col p-1 card border-0 person">
+                      <img src="assets/Characters/4.webp" alt="Garden Image" class="card-img-top rounded-0 slider" />
+                      <figcaption class="card-body p-0 text-center">
+                        <h5 class="card-title">Jane</h5>
+                        <p class="card-text">Graphic Designer</p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row p-0">
+                    <figure class="col p-1 card border-0 person">
+                      <img src="assets/Characters/4.webp" alt="Garden Image" class="card-img-top rounded-0 slider" />
+                      <figcaption class="card-body p-0 text-center">
+                        <h5 class="card-title">Jane</h5>
+                        <p class="card-text">Graphic Designer</p>
+                      </figcaption>
+                    </figure>
+                    <figure class="col p-1 card border-0 person">
+                      <img src="assets/p-image.jpg" alt="Garden Image" class="card-img-top rounded-0 slider" />
+                      <figcaption class="card-body p-0 text-center">
+                        <h5 class="card-title">Jane</h5>
+                        <p class="card-text">Graphic Designer</p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="container-fluid mt-auto" id="Contact">
+    <section class="container-fluid person pt-2 pb-2 mt-">
+      <div class="row text-center pt-2 person">
+        <div class="col">
+          <span>Company Address</span>
+          <address>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+            imperdiet velit nisl
+          </address>
+        </div>
+        <div class="col">
+          <span>Email</span>
+          <p>
+            <a href="mailto:Loremipsumolon@sitamet">Loremipsumolon@sitamet</a> <br>
+            <a href="mailto:adipiscingelit@Maecenasimperdiet">adipiscingelit@Maecenasimperdiet</a>
+          </p>
+        </div>
+        <div class="col">
+          <span>Phone Number</span>
+          <address>
+            <a href="tel:+911234567890">+91 12345 67890</a> <br>
+            <a href="tel:+919876543210">+91 98765 43210</a>
+          </address>
+        </div>
+      </div>
+      <hr style="border-width: 0.5px; opacity: 0.5;" />
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+      <div class="row text-center person">
+        <small>Copyright &copy; 2019 grid. All rights reserved</small>
+      </div>
+    </section>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
