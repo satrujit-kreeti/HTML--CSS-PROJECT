@@ -1,23 +1,23 @@
 /* Global Changes */
 * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   font-family: "Roboto", sans-serif;
 }
 
-/*Custom Navbar Changes */
-
+/* Custom Navbar Changes */
 .navbar {
   max-width: 1440px;
-  margin-inline: auto;
-
+  margin: 0 auto;
 }
-
 
 .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-toggler-icon {
-  background-image: url("assets/ham-menu.svg");
+.navbar-toggler-icon img {
+  height: 100%;
 }
 
 .navbar-brand {
@@ -26,9 +26,13 @@
 }
 
 .nav-item {
-  font-weight: 100 !important;
-  padding-left: 1rem !important;
-  padding-right: 1rem !important;
+  font-weight: 100;
+  padding: 0 1rem;
+}
+
+.nav-link {
+  color: black;
+  font-weight: 400;
 }
 
 .nav-item:hover {
@@ -40,11 +44,10 @@
   background-color: white;
 }
 
-/* header */
-
+/* Header */
 .head-content {
   width: 75%;
-  margin-inline: auto;
+  margin: 0 auto;
 }
 
 .text-center {
@@ -52,15 +55,13 @@
 }
 
 .fs-1 {
-  font-size: 4.5rem !important;
+  font-size: 4.5rem;
   font-weight: 300;
-  margin-bottom: 1rem;
+  margin: 2rem 0 1rem;
   line-height: 1;
-  margin-top: 2rem;
 }
 
 /* .grid */
-
 .grid .card-text {
   line-height: 1.8;
   font-size: medium;
@@ -72,7 +73,6 @@
 }
 
 /* Our Team */
-
 .person {
   background-color: black;
   color: white;
@@ -84,13 +84,18 @@
 }
 
 /* Carousal Slider */
-
 .desktop {
   background-color: rgba(0, 0, 0, 0.9);
 }
 
 .person {
   max-width: 1440px;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .carousel-control-next-icon {
@@ -108,7 +113,7 @@
 
 .carousel-control-prev {
   justify-content: start;
-  margin-left: 1rem;
+  margin: 0 1rem;
 }
 
 .slider {
@@ -139,30 +144,27 @@ hr {
 }
 
 /* Footer */
-
 footer {
   font-weight: 300;
   background-color: black;
-}
-
-footer p,
-address {
   color: rgba(255, 255, 255, 0.699);
   line-height: 1.5rem;
 }
 
-span {
+footer span {
   font-weight: 300;
 }
 
-a {
+footer a,
+address {
   color: rgba(255, 255, 255, 0.699);
   text-decoration: none;
 }
 
-/* Responsiveness */
+/* Responsivenss */
+
 /* Mobile */
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 425px) {
   .desktop {
     display: none;
   }
@@ -203,63 +205,60 @@ a {
     z-index: 9999;
     box-shadow: 0px 6px 3px -3px rgba(0, 0, 0, 0.11);
     padding-bottom: 1rem;
-
   }
 }
 
 /* Tablet */
-
-@media screen and (max-width: 768px) and (min-width: 426px) {
-  .desktop {
-    display: none;
+@media screen and (min-width: 426px) and (max-width: 767px) {
+  .desktop, .mobile {
+  display: none;
   }
-
-  .mobile {
-    display: none;
+  
+  .navbar-toggler {
+  display: none;
   }
-
+  
+  .navbar-nav {
+  visibility: visible;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  }
+  
+  .navbar>.container-fluid {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .collapse:not(.show) {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  }
+  
   .grid .row,
   footer .row {
-    display: block;
+  display: block;
   }
-
+  
   .card {
-    margin-bottom: 1rem !important;
+  margin-bottom: 1rem !important;
   }
-
-  .head-content {
-    width: 100%;
-  }
-
-  .fs-1 {
-    font-size: 3rem !important;
-    font-weight: 300;
-    margin-bottom: 1rem;
-    line-height: 1;
-  }
-
+  
+  .head-content,
   .paragraph {
-    max-width: 100%;
+  max-width: 100%;
   }
-}
-
-/* Others */
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+  
   .fs-1 {
-    font-size: 2.7rem !important;
+  font-size: 3rem !important;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  line-height: 1;
+  }
   }
 
-  .head-content {
-    width: 80%;
-  }
-
-  .container {
-    max-width: 95%;
-  }
-}
-
-@media screen and (min-width: 769px) {
+/* Desktop */
+@media screen and (min-width: 768px) {
   .mobile {
     display: none;
   }
@@ -267,13 +266,7 @@ a {
   .tab {
     display: none;
   }
-}
 
-/* Navbar Toggle */
-
-@media screen and (max-width: 425px) {}
-
-@media screen and (min-width: 426px) {
   .navbar-toggler {
     display: none;
   }
@@ -282,16 +275,25 @@ a {
     visibility: visible;
     display: flex;
     flex-direction: row;
-  }
-
-  .collapse:not(.show) {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    background-color: transparent;
+    position: relative;
+    top: auto;
+    left: auto;
+    width: auto;
+    box-shadow: none;
+    padding-bottom: 0;
   }
 
   .navbar>.container-fluid {
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+  }
+
+  .collapse:not(.show) {
+    display: flex !important;
+    flex-basis: auto;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
   }
 }
