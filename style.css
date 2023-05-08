@@ -55,7 +55,7 @@
 }
 
 .fs-1 {
-  font-size: 4.5rem;
+  font-size: 4.2rem !important;
   font-weight: 300;
   margin: 2rem 0 1rem;
   line-height: 1;
