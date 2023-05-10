@@ -211,6 +211,12 @@ address {
     box-shadow: 0px 6px 3px -3px rgba(0, 0, 0, 0.11);
     padding-bottom: 1rem;
   }
+  .nav-item{
+    width: 100%;
+  }
+  .navbar-toggler{
+    margin-right: 1rem;
+  }
 }
 
 /* Tablet */
