@@ -10,7 +10,7 @@
 .navbar {
   max-width: 1440px;
   margin: 0 auto;
-  padding-left: 1rem;
+  padding-left: 0.75rem;
 }
 
 .navbar-collapse {
@@ -47,7 +47,7 @@
 
 /* Header */
 .head-content {
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -69,6 +69,22 @@
   font-weight: 300;
 }
 
+.image-container {
+  overflow: hidden;
+}
+
+.animation {
+  transition: transform 0.5s cubic-bezier(0.2, 0.9, 0.3, 1.2), box-shadow 0.5s ease;
+}
+
+.animation:hover {
+  transform: scale(1.2);
+}
+
+.separate {
+  font-size: large !important;
+}
+
 .grid {
   margin-bottom: 1.5rem;
 }
@@ -88,6 +104,12 @@
 .paragraph {
   max-width: 85%;
   margin-inline: auto;
+}
+
+#AboutUs {
+  margin-bottom: 0 !important;
+  font-weight: 300 !important;
+  font-size: 3rem;
 }
 
 /* Carousal Slider */
@@ -131,7 +153,8 @@
 
 .card-title {
   font-weight: 400;
-  margin-top: 1rem;
+  margin-top: 1.3rem;
+  margin-bottom: 1rem;
 }
 
 .AboutUs .card-text {
@@ -173,6 +196,9 @@ address {
 
 /* Mobile */
 @media screen and (max-width: 540px) {
+  .head-content {
+    width: 100%;
+  }
 
   .desktop,
   .tab {
@@ -192,8 +218,8 @@ address {
   }
 
   .fs-1 {
-    font-size: 2rem !important;
-    font-weight: 400;
+    font-size: 2.5rem !important;
+    font-weight: 300;
     margin-bottom: 1rem;
     line-height: 1;
   }
@@ -220,10 +246,16 @@ address {
   .navbar-toggler {
     margin-right: 1rem;
   }
+
+  #AboutUs {
+    font-size: 2rem;
+  }
 }
 
 /* Tablet */
 @media screen and (min-width: 541px) and (max-width: 767px) {
+
+
 
   .desktop,
   .mobile,
@@ -266,10 +298,18 @@ address {
     margin-bottom: 1rem;
     line-height: 1;
   }
+
+  #AboutUs {
+    font-size: 2rem;
+  }
 }
 
 /* Desktop */
 @media screen and (min-width: 768px) {
+
+  .container {
+    max-width: 1440px;
+  }
 
   .mobile,
   .tab,
@@ -303,5 +343,16 @@ address {
     background-color: transparent;
     box-shadow: none;
     padding: 0;
+  }
+}
+
+/* Responsiveness Adjustment */
+@media screen and (max-width: 991px) and (min-width:768px) {
+  .container {
+    max-width: fit-content;
+  }
+
+  .head-content {
+    width: 95%;
   }
 }
