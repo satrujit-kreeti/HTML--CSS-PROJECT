@@ -97,6 +97,10 @@
   margin-inline: auto;
 }
 
+.hline1 {
+  width: 2rem;
+}
+
 .size {
   max-width: 1440px;
 }
@@ -190,6 +194,17 @@ footer a,
 address {
   color: rgba(255, 255, 255, 0.699);
   text-decoration: none;
+}
+
+footer span,
+.line {
+  display: block;
+  height: 2rem;
+}
+
+.hline2 {
+  border-width: 0.5px;
+  opacity: 0.5;
 }
 
 /* Responsiveness */
