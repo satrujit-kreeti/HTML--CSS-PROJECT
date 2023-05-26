@@ -114,13 +114,13 @@
 
 #AboutUs {
   position: relative;
-  max-width: 500px;
+  max-width: 400px;
   margin: auto;
   text-align: center;
 
   /* width: 30%; */
 
-  margin-bottom: 0 !important;
+  margin-bottom: 1rem !important;
   font-weight: 300 !important;
   font-size: 3rem;
 }
@@ -128,7 +128,7 @@
 #AboutUs::before {
   content: " ";
   height: 2px;
-  width: 7rem;
+  width: 4rem;
   background: black;
   display: block;
   position: absolute;
@@ -140,7 +140,7 @@
 #AboutUs::after {
   content: " ";
   height: 2px;
-  width: 7rem;
+  width: 4rem;
   background: black;
   display: block;
   position: absolute;
@@ -356,12 +356,12 @@ footer span,
 
   #AboutUs {
     font-size: 2rem;
-    max-width: 350px;
+    max-width: 300px;
   }
 
   #AboutUs:before,
   #AboutUs::after {
-    width: 5rem;
+    width: 3rem;
     height: 1px;
 
   }
