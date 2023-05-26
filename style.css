@@ -110,11 +110,45 @@
   margin-inline: auto;
 }
 
+
+
 #AboutUs {
+  position: relative;
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+
+  /* width: 30%; */
+
   margin-bottom: 0 !important;
   font-weight: 300 !important;
   font-size: 3rem;
 }
+
+#AboutUs::before {
+  content: " ";
+  height: 2px;
+  width: 7rem;
+  background: black;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+}
+
+#AboutUs::after {
+  content: " ";
+  height: 2px;
+  width: 7rem;
+  background: black;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+
 
 /* Carousal Slider */
 .desktop {
@@ -264,6 +298,12 @@ footer span,
 
   #AboutUs {
     font-size: 2rem;
+    max-width: 300px;
+  }
+
+  #AboutUs:before,
+  #AboutUs::after {
+    width: 3rem;
   }
 }
 
@@ -316,6 +356,14 @@ footer span,
 
   #AboutUs {
     font-size: 2rem;
+    max-width: 350px;
+  }
+
+  #AboutUs:before,
+  #AboutUs::after {
+    width: 5rem;
+    height: 1px;
+
   }
 }
 
